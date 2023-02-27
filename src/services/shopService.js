@@ -1,0 +1,27 @@
+const API_URL = 'https://dummyjson.com/products';
+
+const getAllProducts = async () => {
+    try {
+        const response = await fetch(API_URL);
+        const data = await response.json();
+        return data;
+
+    } catch (error) {
+        console.log(error);
+    }
+
+}
+
+const getSearchResult = async (product) => {
+    try {
+        const response = await fetch(`${API_URL}/search?q=${product}`)
+        const data = await response.json();
+        //console.log(data);
+        return data;
+
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+export { getAllProducts, getSearchResult }

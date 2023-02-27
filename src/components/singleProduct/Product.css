@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.list {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr) minmax(300px, 1fr);
+    gap: 40px;
+}
+
+.one_item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 2px solid rgb(199, 199, 199);
+
+}
+
+img {
+    padding: 10px;
+    height: 300px;
+    object-fit: cover;
+}
+
+h4 {
+    display: flex;
+    align-self: center;
+    padding: 15px 10px;
+}
+
+.description {
+    display: flex;
+    padding: 10px;
+    
+}
+
+button {
+    display: flex;
+    padding: 10px;
+    max-width: 80px;
+    justify-content: center;
+    border-style: unset;
+}
+
+.price {
+display: flex;
+font-weight: bold;
+padding: 10px;
+}
+
+.interaction {
+    display: flex;
+    align-self: flex-end !important;
+    gap: 10px;
+    padding: 10px;
+}
+
+button:first-of-type {
+    background-color: rgb(222, 247, 222);
+}
+
+button:last-of-type {
+    background-color: rgb(252, 228, 228);
+}
+
+p {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
