@@ -6,7 +6,6 @@
 
 .list {
     display: grid;
-    padding: 20px;
     grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr) minmax(300px, 1fr);
     gap: 40px;
 }
@@ -34,21 +33,23 @@ h4 {
 .description {
     display: flex;
     padding: 10px;
-    
+    height: 100px;
+
 }
 
 button {
     display: flex;
-    padding: 10px;
-    max-width: 80px;
+    padding: 10px !important;
+    width: 70px;
     justify-content: center;
-    border-style: unset;
+    border-radius: 50% !important;
+
 }
 
 .price {
-display: flex;
-font-weight: bold;
-padding: 10px;
+    display: flex;
+    font-weight: bold;
+    padding: 10px;
 }
 
 .interaction {
@@ -59,11 +60,13 @@ padding: 10px;
 }
 
 button:first-of-type {
-    background-color: rgb(222, 247, 222);
+    background-color: rgb(230, 245, 230);
+    border-color: rgb(212, 241, 212);
 }
 
 button:last-of-type {
-    background-color: rgb(252, 228, 228);
+    background-color: rgb(253, 243, 243);
+    border-color: rgb(247, 221, 221);
 }
 
 p {
